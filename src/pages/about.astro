@@ -1,0 +1,346 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="About Amy — Energy Healing Practitioner Since 1998"
+  description="Learn about Amy's journey from Usui Reiki in 1998 to developing her own profound energy healing technique. Trained under Charlie Goldsmith. Serving Easton MD, Sarasota FL, and virtually."
+>
+
+  <!-- ── PAGE HERO ────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__accent about-accent" aria-hidden="true"></div>
+    <div class="container page-hero__split">
+      <div class="page-hero__body">
+        <span class="tag fade-up">About Amy</span>
+        <h1 class="fade-up-2">The healer<br/><em>behind the work</em></h1>
+        <div class="divider fade-up-3"></div>
+        <p class="page-hero__sub fade-up-4">
+          25+ years of energy healing. A practice born from her own transformation.
+          Trained under world-renowned healer Charlie Goldsmith.
+        </p>
+      </div>
+      <div class="page-hero__img fade-in">
+        <img
+          src="/images/hero-amy.jpeg"
+          alt="Amy — Energy Healer since 1998"
+          width="500"
+          height="500"
+          loading="eager"
+          style="height: 480px; object-position: center 30%;"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STORY ─────────────────────────────────────────── -->
+  <section class="story">
+    <div class="container story__grid">
+
+      <div class="story__stats-col reveal">
+        <div class="story__stats">
+          {[
+            { num: '1998', label: 'Year Amy began her practice' },
+            { num: '25+',  label: 'Years of dedicated healing work' },
+            { num: '3',    label: 'Locations: MD, FL & Virtual' },
+          ].map((s) => (
+            <div class="story__stat">
+              <span class="story__stat-num">{s.num}</span>
+              <span class="story__stat-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="story__image-panel reveal">
+          <img
+            src="/images/meditation.jpg"
+            alt="Meditation and energy healing practice"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="story__text-col">
+        <div class="story__block reveal">
+          <span class="tag">The Beginning</span>
+          <div class="divider"></div>
+          <h2>A practice born from personal transformation</h2>
+          <p>
+            Amy's path into energy healing wasn't a career choice — it was a calling. Beginning
+            with Usui Reiki in 1998, she initially practiced purely for her own wellness,
+            navigating years of intensive inner work to overcome her own trauma. That process
+            didn't just heal her; it amplified her innate ability to channel healing energy for others.
+          </p>
+        </div>
+
+        <div class="story__block reveal">
+          <span class="tag">Training & Lineage</span>
+          <div class="divider"></div>
+          <h2>Trained under the best</h2>
+          <p>
+            Amy had the rare privilege of training under Charlie Goldsmith, a world-renowned energy
+            healer known for producing remarkable results with clients worldwide. This training
+            deepened Amy's practice and helped her develop her own signature hands-on technique —
+            one that incorporates elements of Reiki but goes far deeper, including astral body work.
+          </p>
+        </div>
+
+        <div class="story__block reveal">
+          <span class="tag">Her Approach</span>
+          <div class="divider"></div>
+          <h2>Where energy science meets soulful care</h2>
+          <p>
+            Amy's work addresses the full spectrum of physical and emotional wellness. Her technique
+            aims to soothe stress, insomnia, and physical ailments by identifying and releasing the
+            energetic blockages that prevent you from feeling your best.
+          </p>
+          <p>
+            Sessions are available in person in Easton, MD and Sarasota, FL — and virtually for
+            clients anywhere in the world.
+          </p>
+        </div>
+
+        <div class="story__disclaimer reveal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sage-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <p>
+            Energy Healing with Amy offers spiritual and energetic services only. These services are
+            not massage therapy, bodywork, or medical care and do not diagnose or treat any physical
+            or mental condition.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PILLARS ─────────────────────────────────────────── -->
+  <section class="pillars">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Approach & Values</span>
+        <div class="divider"></div>
+        <h2>What Amy brings to every session</h2>
+      </div>
+
+      <div class="pillars__grid">
+        {[
+          {
+            icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>`,
+            title: 'Rooted in personal healing',
+            body: "Amy's authority comes from lived experience. Having done her own deep healing work, she meets every client without judgment — only compassion and understanding.",
+          },
+          {
+            icon: `<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>`,
+            title: 'Intuitive & deeply personalized',
+            body: "No two sessions are alike. Amy reads your energy and follows where the healing is needed — there are no rigid scripts or one-size-fits-all formulas.",
+          },
+          {
+            icon: `<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>`,
+            title: 'Safe & sacred space',
+            body: "Amy creates an environment where emotional release is welcomed and held. Many clients describe sessions as profoundly cathartic — even those who came in skeptical.",
+          },
+          {
+            icon: `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>`,
+            title: 'Results that last',
+            body: "From chronic pain relief to emotional breakthroughs, Amy's clients report meaningful, lasting shifts — often noticing changes within just one or two sessions.",
+          },
+        ].map((p) => (
+          <div class="pillar reveal">
+            <div class="pillar__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" set:html={p.icon}></svg>
+            </div>
+            <h3>{p.title}</h3>
+            <p>{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="about-cta">
+    <div class="container about-cta__inner reveal">
+      <h2>Ready to experience it for yourself?</h2>
+      <p>Your first session is a gentle, welcoming introduction. No experience required.</p>
+      <div class="about-cta__btns">
+        <a href="/book"    class="btn btn--primary">Book a Session — $111</a>
+        <a href="/contact" class="btn btn--outline">Ask Amy a Question</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ── Page hero accent ─────────────────────────────────── */
+  .about-accent {
+    background: radial-gradient(ellipse at 85% 30%, var(--gold-pale) 0%, transparent 55%);
+    opacity: 0.5;
+  }
+
+  /* ── Story ────────────────────────────────────────────── */
+  .story { background: var(--cream-dark); }
+
+  .story__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .story__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--parchment);
+    padding-bottom: 2.5rem;
+  }
+
+  .story__stat-num {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--brown);
+    line-height: 1;
+    display: block;
+  }
+
+  .story__stat-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    display: block;
+    margin-top: 0.15rem;
+  }
+
+  .story__image-panel {
+    position: relative;
+  }
+
+  .story__image-panel img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: saturate(0.88);
+  }
+
+  .story__image-panel::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 1px solid var(--gold);
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Story text blocks */
+  .story__text-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .story__block {
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--parchment);
+  }
+
+  .story__block:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .story__block .tag   { display: block; color: var(--sage-dark); margin-bottom: 0.25rem; }
+  .story__block h2     { margin-top: 1.25rem; margin-bottom: 1rem; }
+  .story__block p + p  { margin-top: 0.85rem; }
+
+  .story__disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: var(--cream);
+    border: 1px solid var(--parchment);
+    border-left: 3px solid var(--sage);
+    padding: 1.25rem 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .story__disclaimer svg { flex-shrink: 0; margin-top: 2px; }
+  .story__disclaimer p   { font-size: 0.8rem; color: var(--muted); }
+
+  /* ── Pillars ──────────────────────────────────────────── */
+  .pillars { background: var(--cream); }
+
+  .pillars__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .pillar {
+    padding: 2rem 1.5rem;
+    border: 1px solid var(--parchment);
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s;
+  }
+
+  .pillar:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(28,24,16,0.07);
+  }
+
+  .pillar__icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gold-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .pillar h3 { font-size: 1.1rem; margin-bottom: 0.6rem; color: var(--brown); }
+  .pillar p  { font-size: 0.84rem; }
+
+  /* ── CTA ──────────────────────────────────────────────── */
+  .about-cta { background: var(--cream-dark); }
+
+  .about-cta__inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-cta__inner h2 { margin-bottom: 0.75rem; }
+  .about-cta__inner p  { margin-bottom: 0; }
+
+  .about-cta__btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  /* ── Responsive ───────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .pillars__grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .story__grid   { grid-template-columns: 1fr; gap: 2.5rem; }
+    .pillars__grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    .pillars__grid { grid-template-columns: 1fr; }
+  }
+</style>

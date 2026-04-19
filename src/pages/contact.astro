@@ -1,0 +1,362 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Contact Amy — Book a Session or Ask a Question"
+  description="Get in touch with Amy for energy healing sessions in Easton MD, Sarasota FL, or virtually. Call 610-608-9347 or email healwithamyo@gmail.com."
+>
+
+  <!-- ── PAGE HERO ────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__accent contact-accent" aria-hidden="true"></div>
+    <div class="container page-hero__split">
+      <div class="page-hero__body">
+        <span class="tag fade-up">Get in Touch</span>
+        <h1 class="fade-up-2">Let's start your<br/><em>healing journey</em></h1>
+        <div class="divider fade-up-3"></div>
+        <p class="page-hero__sub fade-up-4">
+          Questions? Not sure which service is right for you? Amy would love to hear from you.
+        </p>
+      </div>
+      <div class="page-hero__img fade-in">
+        <img
+          src="/images/meditation-silhouette.jpg"
+          alt="Peaceful meditation at sunset"
+          width="500"
+          height="400"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Info Column -->
+      <div class="contact-info">
+        <div class="reveal">
+          <span class="tag">Direct Contact</span>
+          <div class="divider"></div>
+        </div>
+
+        <div class="contact-methods">
+          <a href="tel:+16106089347" class="contact-method reveal">
+            <div class="contact-method__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.48 2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Phone</div>
+              <div class="contact-method__value">610-608-9347</div>
+            </div>
+          </a>
+
+          <a href="mailto:healwithamyo@gmail.com" class="contact-method reveal">
+            <div class="contact-method__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Email</div>
+              <div class="contact-method__value">healwithamyo@gmail.com</div>
+            </div>
+          </a>
+
+          <div class="contact-method reveal">
+            <div class="contact-method__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Locations</div>
+              <div class="contact-method__value">Easton, MD · Sarasota, FL</div>
+              <div class="contact-method__sub">Virtual sessions available worldwide</div>
+            </div>
+          </div>
+
+          <div class="contact-method reveal">
+            <div class="contact-method__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Instagram</div>
+              <a href="https://www.instagram.com/healwithamy" target="_blank" rel="noopener noreferrer" class="contact-method__value">@healwithamy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Book -->
+        <div class="quick-book reveal">
+          <span class="tag">Ready to book?</span>
+          <h3>Custom Healing Session</h3>
+          <div class="quick-book__price">$111 <span>/ 45 minutes</span></div>
+          <p>One-on-one energy healing designed to support emotional release, balance, and deep relaxation.</p>
+          <a href="/book" class="btn btn--primary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">
+            Book Online Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="contact-form-col reveal">
+        <span class="tag">Send a Message</span>
+        <div class="divider"></div>
+        <h2>We'd love to hear from you</h2>
+        <p style="margin-bottom: 2rem;">Fill out the form and Amy will get back to you within 1–2 business days.</p>
+
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/contact-success">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="610-000-0000" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Interested In</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option value="custom-session">Custom Healing Session ($111)</option>
+              <option value="alignment-path">Alignment Path Mentorship ($222/mo)</option>
+              <option value="expansion-path">Expansion Path Mentorship ($333/mo)</option>
+              <option value="not-sure">Not sure yet — just exploring</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell Amy a bit about what you're hoping to address or achieve…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Accent */
+  .contact-accent {
+    background: radial-gradient(ellipse at 25% 50%, var(--sage-light) 0%, transparent 55%);
+    opacity: 0.2;
+  }
+
+  /* Contact Section */
+  .contact-section { background: var(--cream-dark); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  /* Contact Methods */
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--cream);
+    border: 1px solid var(--parchment);
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .contact-method:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(28,24,16,0.07);
+  }
+
+  .contact-method__icon {
+    width: 44px;
+    height: 44px;
+    background: var(--gold-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    stroke: var(--gold);
+  }
+
+  .contact-method__icon svg { stroke: var(--gold); }
+
+  .contact-method__label {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-method__value {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--brown);
+  }
+
+  .contact-method__sub {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+
+  /* Quick Book */
+  .quick-book {
+    background: var(--brown);
+    padding: 2rem;
+    color: var(--cream);
+  }
+
+  .quick-book .tag { color: var(--gold-light); margin-bottom: 0.75rem; display: block; }
+
+  .quick-book h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+
+  .quick-book__price {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+  }
+
+  .quick-book__price span {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(253,250,245,0.45);
+  }
+
+  .quick-book p { font-size: 0.85rem; color: rgba(253,250,245,0.65); }
+
+  /* Form */
+  .contact-form-col { background: var(--cream); padding: 3rem; border: 1px solid var(--parchment); }
+  .contact-form-col h2 { margin-bottom: 0.5rem; }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .form-group label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brown-light);
+  }
+
+  .req     { color: var(--gold); }
+  .optional { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: var(--cream-dark);
+    border: 1px solid var(--parchment);
+    color: var(--brown);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(196, 151, 90, 0.12);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: var(--muted); }
+
+  .form-group select { cursor: pointer; }
+
+  .form-group textarea { resize: vertical; min-height: 130px; }
+
+  .form-submit {
+    align-self: flex-start;
+    min-width: 200px;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  @media (max-width: 1024px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  }
+
+  @media (max-width: 600px) {
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form-col { padding: 2rem 1.5rem; }
+  }
+</style>

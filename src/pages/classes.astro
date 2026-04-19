@@ -1,0 +1,479 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Classes & Events — Awakening Your Healing Touch with Amy"
+  description="Join Amy's experiential energy healing classes. Learn to feel and work with your own energy, explore the chakra system, and leave with practical tools including a crystal pendulum. Beginners welcome."
+>
+
+  <!-- ── PAGE HERO ────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__accent classes-accent" aria-hidden="true"></div>
+    <div class="container page-hero__split">
+      <div class="page-hero__body">
+        <span class="tag fade-up">Classes & Events</span>
+        <h1 class="fade-up-2">Learn to feel<br/><em>your own energy.</em></h1>
+        <div class="divider fade-up-3"></div>
+        <p class="page-hero__sub fade-up-4">
+          Small, experiential classes designed for beginners and the curious. No experience
+          needed — just an open mind.
+        </p>
+      </div>
+      <div class="page-hero__img fade-in">
+        <img
+          src="/images/class-event.jpg"
+          alt="Energy healing class with Amy"
+          width="500"
+          height="400"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED CLASS ────────────────────────────────── -->
+  <section class="featured-class">
+    <div class="container featured-class__grid">
+
+      <div class="featured-class__text">
+        <div class="reveal">
+          <span class="tag">Signature Class</span>
+          <div class="divider"></div>
+          <h2>Awakening Your<br/>Healing Touch</h2>
+          <p>
+            This welcoming, intuitive class is designed for anyone curious about energy healing —
+            no prior experience required. Amy guides you through the fundamentals of feeling and
+            working with your own energy in a small, personal group setting.
+          </p>
+          <p>
+            You'll leave with a deeper connection to yourself, practical tools you can use at home,
+            and a sense of calm and clarity that stays with you long after the class ends.
+          </p>
+        </div>
+
+        <div class="class-meta reveal">
+          {[
+            { icon: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`, label: 'Audience', value: 'Beginners & the curious' },
+            { icon: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>`, label: 'Group Size', value: 'Limited enrollment' },
+            { icon: `<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>`, label: 'Location', value: 'Easton, MD · Sarasota, FL' },
+            { icon: `<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>`, label: 'Next Class', value: 'Coming soon — join waitlist' },
+          ].map((m) => (
+            <div class="class-meta__item">
+              <div class="class-meta__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" set:html={m.icon}></svg>
+              </div>
+              <div>
+                <div class="class-meta__label">{m.label}</div>
+                <div class="class-meta__value">{m.value}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="reveal" style="margin-top: 2.5rem;">
+          <a href="/contact" class="btn btn--primary">Join the Waitlist</a>
+          <a href="tel:+16106089347" class="btn btn--outline" style="margin-left: 1rem;">Call Amy</a>
+        </div>
+      </div>
+
+      <div class="featured-class__visual reveal">
+        <img
+          src="/images/class-2.jpg"
+          alt="Group energy healing session"
+          loading="lazy"
+        />
+        <div class="featured-class__badge">
+          <span class="tag" style="color: var(--gold-light)">Included</span>
+          <p>Crystal pendulum<br/>to take home</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CURRICULUM ─────────────────────────────────────── -->
+  <section class="curriculum">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">What You'll Learn</span>
+        <div class="divider"></div>
+        <h2>Class curriculum</h2>
+        <p class="section-sub">Every class is experiential — you'll feel this work, not just hear about it.</p>
+      </div>
+
+      <div class="curriculum__grid">
+        {[
+          {
+            num: '01',
+            title: 'Grounding & Hand Activation',
+            body: 'Begin with a guided grounding meditation that settles your energy and activates sensitivity in your hands — the foundation of all energy work.',
+          },
+          {
+            num: '02',
+            title: 'The Chakra System',
+            body: "An introduction to the body's seven major energy centers: where they are, what they govern, and how to sense when one is out of balance.",
+          },
+          {
+            num: '03',
+            title: 'Pendulum Training',
+            body: 'Learn to use and program a crystal pendulum as a practical tool for assessing your own energy and receiving intuitive guidance at home.',
+          },
+          {
+            num: '04',
+            title: 'Personal Energy Assessment',
+            body: 'Practice scanning and reading your own energetic field. Identify areas of tension, blockage, or depletion with guided support from Amy.',
+          },
+          {
+            num: '05',
+            title: 'Partner Practice',
+            body: 'Optional partner exercises where you practice sensing another person\'s energy — a profound experience that builds trust in your own intuition.',
+          },
+          {
+            num: '06',
+            title: 'Guided Chakra Meditation',
+            body: 'A closing meditation that moves through each chakra, leaving you in a state of deep balance and integration before you leave.',
+          },
+        ].map((item) => (
+          <div class="curriculum-item reveal">
+            <div class="curriculum-item__num">{item.num}</div>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHAT YOU TAKE HOME ─────────────────────────────── -->
+  <section class="takeaways">
+    <div class="container takeaways__grid">
+      <div class="takeaways__img reveal">
+        <img
+          src="/images/class-3.jpg"
+          alt="Healing workshop participants"
+          loading="lazy"
+        />
+      </div>
+      <div class="takeaways__text">
+        <div class="reveal">
+          <span class="tag">After the Class</span>
+          <div class="divider"></div>
+          <h2>What you leave with</h2>
+        </div>
+        <ul class="takeaways__list">
+          {[
+            { icon: '✦', item: 'A deeper, felt connection to your own energy' },
+            { icon: '✦', item: 'A crystal pendulum programmed for your personal use' },
+            { icon: '✦', item: 'Practical grounding and balancing techniques for daily life' },
+            { icon: '✦', item: 'An understanding of the chakra system you can apply on your own' },
+            { icon: '✦', item: 'Take-home resources to continue your practice' },
+            { icon: '✦', item: 'A sense of calm, clarity, and renewed connection to yourself' },
+          ].map((t) => (
+            <li class="reveal">
+              <span class="takeaway-icon" aria-hidden="true">{t.icon}</span>
+              <span>{t.item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHO IT'S FOR ───────────────────────────────────── -->
+  <section class="classes-who">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Is This for You?</span>
+        <div class="divider"></div>
+        <h2>This class is perfect if you…</h2>
+      </div>
+      <div class="classes-who__grid">
+        {[
+          "Are new to energy healing and don't know where to start",
+          "Feel overwhelmed, disconnected, or stuck and want relief",
+          "Are curious about intuition and want to develop your own",
+          "Want practical tools to support your wellbeing at home",
+          "Prefer learning in a small, supportive group environment",
+          "Are ready to experience energy — not just read about it",
+        ].map((item) => (
+          <div class="who-item reveal">
+            <span class="who-item__icon" aria-hidden="true">✦</span>
+            <p>{item}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WAITLIST CTA ───────────────────────────────────── -->
+  <section class="waitlist-cta noise">
+    <div class="container waitlist-cta__inner reveal">
+      <span class="tag" style="color: var(--gold-light)">Next Class Coming Soon</span>
+      <h2>Be the first to know.</h2>
+      <p>
+        Classes fill up fast. Join the waitlist and Amy will reach out as soon as the next
+        date is confirmed.
+      </p>
+      <div class="waitlist-cta__btns">
+        <a href="/contact" class="btn btn--gold">Join the Waitlist</a>
+        <a href="/services" class="btn btn--outline" style="border-color: rgba(253,250,245,0.3); color: var(--cream);">View 1:1 Sessions</a>
+      </div>
+      <p class="waitlist-cta__contact">
+        Or call Amy directly: <a href="tel:+16106089347">610-608-9347</a>
+      </p>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Accent */
+  .classes-accent {
+    background: radial-gradient(ellipse at 80% 30%, var(--gold-pale) 0%, transparent 55%);
+    opacity: 0.6;
+  }
+
+  /* ── Featured Class ──────────────────────────────────── */
+  .featured-class { background: var(--cream-dark); }
+
+  .featured-class__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .featured-class__text .tag { color: var(--sage-dark); display: block; }
+  .featured-class__text h2   { margin-top: 1.25rem; margin-bottom: 1rem; }
+  .featured-class__text p + p { margin-top: 0.85rem; }
+
+  .class-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--parchment);
+  }
+
+  .class-meta__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .class-meta__icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gold-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .class-meta__label {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    margin-bottom: 0.2rem;
+  }
+
+  .class-meta__value {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--brown);
+  }
+
+  .featured-class__visual {
+    position: relative;
+  }
+
+  .featured-class__visual img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.88);
+  }
+
+  .featured-class__visual::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border: 1px solid var(--gold);
+    opacity: 0.22;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .featured-class__badge {
+    position: absolute;
+    bottom: 1rem;
+    left: -1rem;
+    background: var(--brown);
+    padding: 1rem 1.25rem;
+    border-right: 3px solid var(--gold);
+  }
+
+  .featured-class__badge p {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: rgba(253,250,245,0.75);
+    margin-top: 0.3rem;
+    line-height: 1.4;
+  }
+
+  /* ── Curriculum ──────────────────────────────────────── */
+  .curriculum { background: var(--cream); }
+
+  .curriculum__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .curriculum-item {
+    padding: 2rem 1.75rem;
+    border: 1px solid var(--parchment);
+    background: var(--cream-dark);
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .curriculum-item:hover { transform: translateY(-4px); }
+
+  .curriculum-item__num {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--gold);
+    opacity: 0.2;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .curriculum-item h3 { font-size: 1.1rem; margin-bottom: 0.6rem; color: var(--brown); }
+  .curriculum-item p  { font-size: 0.85rem; }
+
+  /* ── Takeaways ───────────────────────────────────────── */
+  .takeaways { background: var(--cream-dark); }
+
+  .takeaways__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .takeaways__img img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.88);
+  }
+
+  .takeaways__text .tag { color: var(--sage-dark); display: block; }
+  .takeaways__text h2   { margin-top: 1.25rem; margin-bottom: 1.5rem; }
+
+  .takeaways__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .takeaways__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--parchment);
+    font-size: 0.9rem;
+    color: var(--brown-light);
+  }
+
+  .takeaways__list li:last-child { border-bottom: none; }
+
+  .takeaway-icon {
+    color: var(--gold);
+    font-size: 0.6rem;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  /* ── Who It's For ────────────────────────────────────── */
+  .classes-who { background: var(--cream); }
+
+  .classes-who__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .who-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--cream-dark);
+    border: 1px solid var(--parchment);
+    transition: transform 0.25s;
+  }
+
+  .who-item:hover { transform: translateY(-3px); }
+  .who-item__icon { color: var(--gold); font-size: 0.65rem; flex-shrink: 0; margin-top: 5px; }
+  .who-item p     { font-size: 0.87rem; }
+
+  /* ── Waitlist CTA ────────────────────────────────────── */
+  .waitlist-cta {
+    background: var(--brown);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .waitlist-cta__inner { position: relative; z-index: 2; }
+  .waitlist-cta__inner h2 { color: var(--cream); margin: 0.75rem 0; }
+  .waitlist-cta__inner p  { color: rgba(253,250,245,0.65); max-width: 460px; margin: 0 auto; }
+
+  .waitlist-cta__btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .waitlist-cta__contact {
+    margin-top: 1.5rem;
+    font-size: 0.82rem;
+    color: rgba(253,250,245,0.4);
+  }
+
+  .waitlist-cta__contact a { color: var(--gold-light); transition: color 0.2s; }
+  .waitlist-cta__contact a:hover { color: var(--cream); }
+
+  /* ── Responsive ──────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .curriculum__grid   { grid-template-columns: 1fr 1fr; }
+    .classes-who__grid  { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .featured-class__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .takeaways__grid      { grid-template-columns: 1fr; gap: 2.5rem; }
+    .curriculum__grid     { grid-template-columns: 1fr 1fr; }
+    .classes-who__grid    { grid-template-columns: 1fr; }
+    .featured-class__badge { left: 0; }
+  }
+
+  @media (max-width: 480px) {
+    .curriculum__grid { grid-template-columns: 1fr; }
+  }
+</style>

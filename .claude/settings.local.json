@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.healwithamy.com)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:4321/)",
+      "Bash(curl -s http://localhost:4322/)",
+      "Bash(curl -s http://localhost:4400/)",
+      "Bash(npx storybook@latest init --skip-install)",
+      "Bash(sudo chmod *)",
+      "Read(//Users/a1234/.npm/_cacache/content-v2/sha512/1f/**)",
+      "Bash(mkdir -p \"/Users/a1234/Downloads/Heal With Amy/public/images\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/b5ac46_f6da447379c64a53873a2a5487cd0a90~mv2.jpeg\" -o \"hero-amy.jpeg\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/4200a8_d410c72114b84bc78198c5e391754a51~mv2.jpeg\" -o \"session-1.jpeg\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/4200a8_ac9d41a3245740928cfbd1057ad4583b~mv2.jpg\"  -o \"session-2.jpg\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/11062b_9ca28b232a954bb4b58a9115f1748584~mv2.jpg\"  -o \"river-mountain.jpg\")",
+      "Bash(curl -s http://localhost:6006/)",
+      "Bash(pkill -f \"storybook dev\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:6006/)",
+      "Bash(curl -s http://localhost:4400/about/)",
+      "Bash(sort -k5 -hr)",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/a3c153_6f27754e06844d62a1708b316797fc08~mv2.jpg\" -o \"class-event.jpg\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/4200a8_beaeb8629ccf477da0c9eb4693f93d63~mv2.png\" -o \"amy-headshot.png\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/4200a8_a5e7c6772d9c4052ad18c5e3e9911f39~mv2.jpg\" -o \"chakras-poster.jpg\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/4200a8_4bdbc1582a704cb58ab266790479f553~mv2.jpg\" -o \"yoga-pose.jpg\")",
+      "Bash(curl -sL \"https://static.wixstatic.com/media/4200a8_ba1d2f946e9848c99176126f2153ec6b~mv2.webp\" -o \"healing-hands.webp\")",
+      "Bash(npx storybook *)",
+      "WebFetch(domain:webcache.googleusercontent.com)",
+      "WebFetch(domain:web.archive.org)"
+    ]
+  }
+}

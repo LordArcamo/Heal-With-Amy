@@ -1,0 +1,460 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Testimonials — Real Results from Energy Healing with Amy"
+  description="Read what clients say about Energy Healing with Amy — from a Philadelphia Eagles player finding pain relief to nurses experiencing transformation. Real healing, real results."
+>
+
+  <!-- ── PAGE HERO ────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__accent testimonials-accent" aria-hidden="true"></div>
+    <div class="container page-hero__split">
+      <div class="page-hero__body">
+        <span class="tag fade-up">Client Stories</span>
+        <h1 class="fade-up-2">Real people.<br/><em>Real transformation.</em></h1>
+        <div class="divider fade-up-3"></div>
+        <p class="page-hero__sub fade-up-4">
+          The proof is in the people. Hear directly from those whose lives were changed
+          through Amy's work.
+        </p>
+      </div>
+      <div class="page-hero__img fade-in">
+        <img
+          src="/images/yoga-pose.jpg"
+          alt="Person in peaceful yoga pose"
+          width="500"
+          height="400"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED TESTIMONIAL ─────────────────────────── -->
+  <section class="featured-testimonial">
+    <div class="container">
+      <div class="featured-card reveal">
+        <div class="featured-card__quote-mark" aria-hidden="true">"</div>
+        <blockquote class="featured-card__quote">
+          After playing football at Veteran's Stadium in Philadelphia, I have collected a few
+          bumps and bruises. Painful aching of neck, spine and shoulders are consistent reminders
+          of the intense contact on the worst playing surface in the NFL. However, thanks to
+          Energy Healing with Amy, in just two sessions I have found relief. I am back on the
+          golf course, in the gym and back in the pool doing aerobics. Looking forward to more
+          sessions and feeling better!
+        </blockquote>
+        <div class="featured-card__author">
+          <div class="featured-card__avatar" aria-hidden="true">JB</div>
+          <div>
+            <div class="featured-card__name">John Bunting</div>
+            <div class="featured-card__role">#95 Philadelphia Eagles (1972–1982)</div>
+          </div>
+        </div>
+        <div class="featured-card__results">
+          <div class="result-pill">✦ 2 Sessions</div>
+          <div class="result-pill">✦ Chronic Pain Relief</div>
+          <div class="result-pill">✦ Back to Full Activity</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MORE TESTIMONIALS ─────────────────────────────── -->
+  <section class="more-testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">More Stories</span>
+        <div class="divider"></div>
+        <h2>Voices from Amy's community</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            "When I arrived, I was barely able to walk. After both healing sessions with Amy, I was
+            immediately pain-free and able to walk. One of the most cathartic and transformative
+            experiences I've ever had. Amy's beautiful energy and gifted practice speak for
+            themselves."
+          </blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">MM</div>
+            <div>
+              <div class="testimonial-card__name">Meg Megettigan-Murphy</div>
+              <div class="testimonial-card__context">Registered Nurse, 25 Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            "I came to Amy completely burned out and disconnected from myself. After just one
+            session, I felt a lightness I hadn't felt in years. Her beautiful energy and deep
+            intuition made it feel completely safe to let go."
+          </blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">SC</div>
+            <div>
+              <div class="testimonial-card__name">Sarah C.</div>
+              <div class="testimonial-card__context">Virtual Session Client</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            "I had been struggling with insomnia for over two years. After three sessions with Amy,
+            I was finally sleeping through the night. She has a gift that's hard to put into words —
+            you just have to experience it."
+          </blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+            <div>
+              <div class="testimonial-card__name">Michael R.</div>
+              <div class="testimonial-card__context">Easton, MD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PHOTO MOSAIC ──────────────────────────────────── -->
+  <section class="photo-mosaic">
+    <div class="mosaic-grid">
+      <div class="mosaic-cell mosaic-cell--tall">
+        <img src="/images/class-event.jpg" alt="Energy healing class" loading="lazy" />
+      </div>
+      <div class="mosaic-cell">
+        <img src="/images/class-2.jpg" alt="Group healing session" loading="lazy" />
+      </div>
+      <div class="mosaic-cell">
+        <img src="/images/meditation-silhouette.jpg" alt="Meditation silhouette at sunset" loading="lazy" />
+      </div>
+      <div class="mosaic-cell mosaic-cell--wide">
+        <img src="/images/class-3.jpg" alt="Healing workshop" loading="lazy" />
+        <div class="mosaic-overlay">
+          <span class="tag">Classes & Events</span>
+          <p>Group experiences, workshops, and ongoing mentorship</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ─────────────────────────────────────────── -->
+  <section class="stats-strip">
+    <div class="container stats-strip__grid">
+      {[
+        { num: '25+',  label: 'Years of healing practice' },
+        { num: '2',    label: 'Sessions for John Bunting\'s pain relief' },
+        { num: '3',    label: 'Locations: MD, FL & Virtual' },
+        { num: '100%', label: 'Personalized to your energy' },
+      ].map((s) => (
+        <div class="stat reveal">
+          <div class="stat__num">{s.num}</div>
+          <div class="stat__label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="testimonials-cta noise">
+    <div class="container testimonials-cta__inner reveal">
+      <span class="tag" style="color: var(--gold-light)">Your Story Awaits</span>
+      <h2>Could you be next?</h2>
+      <p>Join the growing community of people who have found relief, clarity, and reconnection through Amy's work.</p>
+      <div class="testimonials-cta__btns">
+        <a href="/book"     class="btn btn--gold">Book Your First Session</a>
+        <a href="/services" class="btn btn--outline" style="border-color: rgba(253,250,245,0.3); color: var(--cream);">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Accent */
+  .testimonials-accent {
+    background: radial-gradient(ellipse at 75% 40%, var(--parchment) 0%, transparent 55%);
+    opacity: 0.7;
+  }
+
+  /* ── Featured ─────────────────────────────────────────── */
+  .featured-testimonial { background: var(--cream-dark); }
+
+  .featured-card {
+    position: relative;
+    padding: 3.5rem 3.5rem 2.5rem;
+    background: var(--cream);
+    border: 1px solid var(--parchment);
+    border-top: 4px solid var(--gold);
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .featured-card__quote-mark {
+    position: absolute;
+    top: 0.5rem; left: 2.5rem;
+    font-family: var(--font-display);
+    font-size: 8rem;
+    color: var(--gold);
+    opacity: 0.1;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .featured-card__quote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--brown);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .featured-card__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-card__avatar {
+    width: 48px; height: 48px;
+    background: var(--gold);
+    color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .featured-card__name {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--brown);
+  }
+
+  .featured-card__role {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    margin-top: 0.2rem;
+  }
+
+  .featured-card__results {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--parchment);
+    padding-top: 1.5rem;
+  }
+
+  .result-pill {
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    background: var(--cream-dark);
+    border: 1px solid var(--parchment);
+    padding: 0.3rem 0.75rem;
+  }
+
+  /* ── More testimonials ────────────────────────────────── */
+  .more-testimonials { background: var(--cream); }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem;
+    background: var(--cream-dark);
+    border: 1px solid var(--parchment);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .testimonial-card:hover { transform: translateY(-4px); }
+
+  .testimonial-card__stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.1em; }
+
+  .testimonial-card blockquote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--brown);
+    flex: 1;
+  }
+
+  .testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-top: 1px solid var(--parchment);
+    padding-top: 1.25rem;
+  }
+
+  .testimonial-card__avatar {
+    width: 38px; height: 38px;
+    background: var(--parchment);
+    color: var(--brown-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .testimonial-card__name    { font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; color: var(--brown); }
+  .testimonial-card__context { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
+
+  /* ── Photo Mosaic ─────────────────────────────────────── */
+  .photo-mosaic { padding: 0; }
+
+  .mosaic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 240px 240px;
+    gap: 4px;
+  }
+
+  .mosaic-cell {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mosaic-cell--tall {
+    grid-row: 1 / 3;
+  }
+
+  .mosaic-cell--wide {
+    grid-column: 2 / 4;
+  }
+
+  .mosaic-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.85);
+    transition: transform 0.6s ease, filter 0.4s;
+  }
+
+  .mosaic-cell:hover img {
+    transform: scale(1.04);
+    filter: saturate(1);
+  }
+
+  .mosaic-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(28,24,16,0.65) 0%, transparent 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
+
+  .mosaic-cell--wide:hover .mosaic-overlay { opacity: 1; }
+
+  .mosaic-overlay .tag  { color: var(--gold-light); margin-bottom: 0.25rem; }
+  .mosaic-overlay p     { font-size: 0.85rem; color: rgba(253,250,245,0.8); }
+
+  /* ── Stats ────────────────────────────────────────────── */
+  .stats-strip { background: var(--brown); padding: 4rem 0; }
+
+  .stats-strip__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .stat { padding: 2rem; text-align: center; background: var(--brown); }
+
+  .stat__num {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat__label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: rgba(253,250,245,0.4);
+    text-transform: uppercase;
+  }
+
+  /* ── CTA ──────────────────────────────────────────────── */
+  .testimonials-cta {
+    background: var(--brown);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonials-cta__inner { position: relative; z-index: 2; }
+  .testimonials-cta__inner h2 { color: var(--cream); margin: 0.75rem 0; }
+  .testimonials-cta__inner p  { color: rgba(253,250,245,0.65); max-width: 460px; margin: 0 auto; }
+
+  .testimonials-cta__btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  /* ── Responsive ───────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .stats-strip__grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .mosaic-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 180px 180px; }
+    .mosaic-cell--tall  { grid-row: auto; }
+    .mosaic-cell--wide  { grid-column: auto; }
+    .featured-card { padding: 2rem 1.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .stats-strip__grid { grid-template-columns: 1fr; }
+    .mosaic-grid { grid-template-columns: 1fr; grid-template-rows: repeat(4, 200px); }
+  }
+</style>

@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Book a Session — Custom Energy Healing with Amy"
+  description="Book a 45-minute Custom Healing Session with Amy for $111. Available in Easton MD, Sarasota FL, and virtually. Energy healing for emotional release, balance, and deep relaxation."
+>
+
+  <!-- ── PAGE HERO ────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero__accent book-accent" aria-hidden="true"></div>
+    <div class="container page-hero__split">
+      <div class="page-hero__body">
+        <span class="tag fade-up">Online Booking</span>
+        <h1 class="fade-up-2">Book your<br/><em>healing session</em></h1>
+        <div class="divider fade-up-3"></div>
+        <p class="page-hero__sub fade-up-4">
+          45 minutes · $111 · In-person or virtual. Choose a time that works for you.
+        </p>
+      </div>
+      <div class="page-hero__img fade-in">
+        <img
+          src="/images/session-1.jpeg"
+          alt="Energy healing session with Amy"
+          width="500"
+          height="400"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="book-body">
+    <div class="container book-body__grid">
+      <!-- Session Details -->
+      <div class="book-details">
+        <div class="reveal">
+          <span class="tag">What you'll experience</span>
+          <div class="divider"></div>
+          <h2>Custom Healing Session</h2>
+          <div class="book-meta">
+            <div class="book-meta__item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>45 minutes</span>
+            </div>
+            <div class="book-meta__item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+              <span>$111 USD</span>
+            </div>
+            <div class="book-meta__item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>In-person or Virtual</span>
+            </div>
+          </div>
+          <p>
+            Amy will work with your energy to identify and dissolve blockages that are keeping you from feeling your best. Her unique technique — an evolution of Reiki that includes astral body work — is deeply intuitive and profoundly effective.
+          </p>
+        </div>
+
+        <div class="book-includes reveal" style="margin-top: 2.5rem;">
+          <span class="tag">Includes</span>
+          <ul>
+            {[
+              'Full 45-minute hands-on energy healing',
+              'Amy\'s signature technique (beyond Reiki)',
+              'Chakra awareness and astral body work',
+              'Emotional and energetic release',
+              'Available in-person in MD or FL, or virtually',
+              'Post-session integration guidance',
+            ].map((item) => (
+              <li>
+                <span>✦</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="book-contact reveal" style="margin-top: 2rem;">
+          <p>Prefer to book by phone? Call Amy directly:</p>
+          <a href="tel:+16106089347" class="btn btn--outline" style="margin-top: 0.75rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.48 2 2 0 0 1 3.62 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            610-608-9347
+          </a>
+        </div>
+      </div>
+
+      <!-- Booking Widget Placeholder -->
+      <div class="book-widget reveal">
+        <div class="book-widget__inner">
+          <span class="tag">Book Online</span>
+          <div class="divider"></div>
+          <h3>Select a Date & Time</h3>
+          <p style="margin-bottom: 2rem; font-size: 0.87rem;">
+            Use Amy's booking calendar below to select your preferred date and time. Booking is secure and instant.
+          </p>
+
+          <!-- Replace this iframe src with Amy's actual booking calendar URL -->
+          <div class="booking-embed">
+            <div class="booking-embed__placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <p>Booking calendar loads here</p>
+              <p class="booking-embed__note">
+                This will be connected to Amy's booking system.<br/>
+                In the meantime, call <a href="tel:+16106089347">610-608-9347</a> or<br/>
+                email <a href="mailto:healwithamyo@gmail.com">healwithamyo@gmail.com</a>
+              </p>
+              <a href="https://www.healwithamy.com/booking-calendar/custom-healing-session" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="margin-top: 1.5rem;">
+                Book on Original Site →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Accent */
+  .book-accent {
+    background: radial-gradient(ellipse at 70% 40%, var(--gold-pale) 0%, transparent 55%);
+    opacity: 0.6;
+  }
+
+  .book-body { background: var(--cream-dark); }
+
+  .book-body__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .book-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0 1.25rem;
+  }
+
+  .book-meta__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--brown-light);
+  }
+
+  .book-includes ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 1rem;
+  }
+
+  .book-includes li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.85rem;
+    color: var(--brown-light);
+  }
+
+  .book-includes li span:first-child {
+    color: var(--gold);
+    font-size: 0.65rem;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .book-contact p { font-size: 0.85rem; color: var(--muted); }
+
+  .book-widget__inner {
+    background: var(--cream);
+    padding: 2.5rem;
+    border: 1px solid var(--parchment);
+  }
+
+  .book-widget__inner h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .booking-embed { min-height: 400px; }
+
+  .booking-embed__placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+    background: var(--cream-dark);
+    border: 1px dashed var(--parchment);
+    text-align: center;
+    padding: 2rem;
+    gap: 0.75rem;
+  }
+
+  .booking-embed__placeholder p {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--brown-light);
+  }
+
+  .booking-embed__note {
+    font-family: var(--font-body) !important;
+    font-style: normal !important;
+    font-size: 0.82rem !important;
+    color: var(--muted) !important;
+    line-height: 1.6 !important;
+  }
+
+  .booking-embed__note a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (max-width: 768px) {
+    .book-body__grid { grid-template-columns: 1fr; gap: 2rem; }
+  }
+</style>
