@@ -102,11 +102,8 @@ export default function ChatBot() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? 'Close chat' : 'Open chat with Amy\'s assistant'}
+        className="chatbot-toggle"
         style={{
-          position: 'fixed',
-          bottom: '1.75rem',
-          right: '1.75rem',
-          zIndex: 1000,
           width: 56,
           height: 56,
           borderRadius: '50%',
@@ -138,12 +135,8 @@ export default function ChatBot() {
         role="dialog"
         aria-modal="true"
         aria-label="Chat with Amy's assistant"
+        className="chatbot-window"
         style={{
-          position: 'fixed',
-          bottom: '5.5rem',
-          right: '1.75rem',
-          zIndex: 999,
-          width: 'min(380px, calc(100vw - 3rem))',
           background: 'var(--cream)',
           borderRadius: '16px',
           boxShadow: '0 8px 48px rgba(28,24,16,0.18), 0 0 0 1px rgba(196,151,90,0.2)',
@@ -155,7 +148,6 @@ export default function ChatBot() {
           opacity: open ? 1 : 0,
           pointerEvents: open ? 'all' : 'none',
           transition: 'transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.3s ease',
-          maxHeight: '520px',
         }}
       >
         {/* Header */}
@@ -271,7 +263,7 @@ export default function ChatBot() {
               borderRadius: '8px',
               padding: '0.55rem 0.85rem',
               fontFamily: 'var(--font-body)',
-              fontSize: '0.82rem',
+              fontSize: '1rem',
               color: 'var(--brown)',
               outline: 'none',
               transition: 'border-color 0.2s',
@@ -282,8 +274,8 @@ export default function ChatBot() {
             disabled={!input.trim()}
             aria-label="Send message"
             style={{
-              width: 36,
-              height: 36,
+              width: 44,
+              height: 44,
               borderRadius: '8px',
               background: input.trim() ? 'var(--brown)' : 'var(--parchment)',
               border: 'none',
@@ -304,6 +296,32 @@ export default function ChatBot() {
       </div>
 
       <style>{`
+        .chatbot-toggle {
+          position: fixed;
+          bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+          right: 1.5rem;
+          z-index: 1000;
+        }
+        .chatbot-window {
+          position: fixed;
+          bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
+          right: 1.5rem;
+          z-index: 999;
+          width: min(380px, calc(100vw - 3rem));
+          max-height: 520px;
+        }
+        @media (max-width: 480px) {
+          .chatbot-toggle {
+            bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+            right: 1rem;
+          }
+          .chatbot-window {
+            bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+            right: 1rem;
+            width: calc(100vw - 2rem);
+            max-height: min(480px, calc(100dvh - 7rem));
+          }
+        }
         @keyframes chatDot {
           0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
           40%            { transform: translateY(-5px); opacity: 1; }
